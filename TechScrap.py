@@ -50,17 +50,17 @@ class TechScrap():
       s.label_img1=tkinter.Label(s.root,image=s.image1,bg="white",height=120,width=230).place(x=320,y=140)
       
       s.label6=tkinter.Label(s.root,text="Enter the numbers:",font=("arieal",8,"bold"),bg=s.color)
-      s.label6.place(x=20,y=600)
+      s.label6.place(x=20,y=620)
   
       s.text = scrolledtext.ScrolledText(s.root,height=20,width=90,wrap=tkinter.WORD,bg="#ff7188",fg="#000000",font=("garamond",10,"bold"),border=5)
       s.text.place(x=10,y=280)
 
       s.enter_headingno=tkinter.Entry(s.root,font=("arieal",8,"bold"),relief="raised",textvariable=s.no)
-      s.enter_headingno.place(x=160,y=600,height=20,width=100)
+      s.enter_headingno.place(x=160,y=620,height=20,width=100)
       
       
       s.exit_button=tkinter.Button(s.root,text="Finished",command=lambda:s.quit(),fg="red",relief="raised")
-      s.exit_button.place(x=400,y=600,height=20,width=75)
+      s.exit_button.place(x=400,y=620,height=20,width=75)
 
       s.root.mainloop()
  
@@ -85,7 +85,7 @@ class TechScrap():
                s.link1.append(i.find("a").get("href"))
                length+=1
          s.sumbit_button=tkinter.Button(s.root,text="Open",command=lambda:s.dispaly(s.link1),fg="red",relief="raised")
-         s.sumbit_button.place(x=300,y=600,height=20,width=70)
+         s.sumbit_button.place(x=300,y=620,height=20,width=70)
 
       
   
@@ -108,7 +108,7 @@ class TechScrap():
               s.link2.append(i.find("a").get("href"))
               length+=1
          s.sumbit_button=tkinter.Button(s.root,text="Open",command=lambda:s.dispaly(s.link2),fg="red",relief="sunken")
-         s.sumbit_button.place(x=300,y=600,height=20,width=70)
+         s.sumbit_button.place(x=300,y=620,height=20,width=70)
         
          
   def fossbytes(s):
@@ -130,7 +130,7 @@ class TechScrap():
           s.link3.append(i.find("a").get("href"))
           length+=1
        s.sumbit_button=tkinter.Button(s.root,text="Open",command=lambda:s.dispaly(s.link3),fg="red",relief="sunken")
-       s.sumbit_button.place(x=300,y=600,height=20,width=70)
+       s.sumbit_button.place(x=300,y=620,height=20,width=70)
      
           
   def hackernews(s):
@@ -155,7 +155,7 @@ class TechScrap():
            s.link4.append(i.get("href"))
            length+=1
         s.sumbit_button=tkinter.Button(s.root,text="Open",command=lambda:s.dispaly(s.link4),fg="red",relief="sunken")
-        s.sumbit_button.place(x=300,y=600,height=20,width=70)
+        s.sumbit_button.place(x=300,y=620,height=20,width=70)
   def dispaly(s,link):
       s.text.delete("1.0",tkinter.END)
       s.enter_webno.delete(0,tkinter.END)
